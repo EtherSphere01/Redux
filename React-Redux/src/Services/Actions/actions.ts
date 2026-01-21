@@ -1,4 +1,4 @@
-import { Add_To_Cart } from "../Reducers/constants";
+import { Add_To_Cart } from "../constants";
 
 // this file is for action creators for redux
 interface CartItem {

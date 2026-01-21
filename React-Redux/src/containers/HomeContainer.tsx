@@ -1,12 +1,15 @@
+import { connect } from "react-redux";
 import Home from "../components/Home";
+import { addToCart } from "../Services/Actions/actions";
 
-// this is for connecting to redux store
-export default function HomeContainer() {
-    return (
-        <div>
-            <div>
-                <Home />
-            </div>
-        </div>
-    );
-}
+const mapStateToProps = (state: any) => {
+    return {
+        cardData: state.cardItems.cardData,
+    };
+};
+
+const mapDispatchToProps = (dispatch: any) => {
+    addToCartHandler: (data) => dispatch(addToCart(data));
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
