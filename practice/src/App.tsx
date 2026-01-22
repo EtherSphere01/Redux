@@ -16,7 +16,9 @@ function App() {
             <div>
                 <h1>Counter With Redux</h1>
                 <button onClick={() => handleIncrement(5)}>Increment</button>
+
                 <h2>{count}</h2>
+
                 <button onClick={() => handleDecrement(5)}>Decrement</button>
             </div>
         </>
