@@ -1,6 +1,6 @@
 import { useAppDispatch, useAppSelector } from "@/Redux/hook";
 
-export default function tasks() {
+export default function Tasks() {
     const tasks = useAppSelector((state) => state.todo.tasks);
     return (
         <div>

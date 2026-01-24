@@ -1,3 +1,4 @@
+import Tasks from "@/pages/tasks";
 import App from "../App";
 import { createBrowserRouter } from "react-router";
 
@@ -7,8 +8,8 @@ const router = createBrowserRouter([
         element: <App />,
         children: [
             {
-                // path: "about",
-                element: <div>About Page</div>,
+                path: "tasks",
+                element: <Tasks />,
             },
         ],
     },
